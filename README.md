@@ -1,2 +1,2 @@
-# trinketstorage
-An api for storing data from Trinket projects.
+# Troop59
+A Flask web server/site for BSA Marin Council Troop 59.
