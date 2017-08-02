@@ -1,0 +1,59 @@
+html {
+  font: 13px Verdana, Arial, sans-serif;
+}
+
+table,
+th,
+td {
+  vertical-align: top;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+#hiddentable,
+h3,
+body {
+  display: none;
+}
+
+#hiddentable td {
+  border: 1px solid transparent;
+  vertical-align: middle
+}
+
+#hiddentable img {
+  border-radius: 20px
+}
+
+body {
+  background: blue;
+  background: linear-gradient(white, #add8e6);
+}
+
+#otherhiddentable {
+  width: 100%;
+}
+
+#otherhiddentable,
+h4 {
+  opacity: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bsalink {
+  font-size: 15px;
+  text-align: center
+}
+
