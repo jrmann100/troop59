@@ -1,9 +1,10 @@
 #!/home/flask/venv/bin/python
-from flask import Flask, send_from_directory, render_template, jsonify, request, Response
+from flask import Flask, send_from_directory, render_template, jsonify, request, Response, url_for
 import os
 from functools import wraps
 
 app = Flask(__name__)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 
 def check_auth(username, password):
@@ -41,12 +42,23 @@ def index():
 def send_file(path):
     return send_from_directory(os.path.join(app.root_path, 'static'), path)
 
+
+@app.route('/communications/<path:path>')
+def render_commpage(path):
+    return render_template('communications/' + path)
+
+@app.context_processor
+def override_url_for():
+    return dict(url_for=dated_url_for)
+
+def dated_url_for(endpoint, **values):
+    if endpoint == 'static':
+        filename = values.get('filename', None)
+        if filename:
+            file_path = os.path.join(app.root_path,
+                                     endpoint, filename)
+            values['q'] = int(os.stat(file_path).st_mtime)
+    return url_for(endpoint, **values)
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=9001)
-
-
-# Favicon setup.
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')

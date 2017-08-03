@@ -1,0 +1,44 @@
+html {
+  font: 13px Verdana, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(white, #add8e6);
+}
+
+.headtitle {
+    font-size: 4vh
+}
+
+.reqbody {
+    font-size: 1.5vh
+}
+
+.reqtitle {
+    font-size: 1.75vh
+}
+
+#timestable {
+    width: 100%;
+    padding: 1vw;
+    font-size: 1.5vh;
+    border-collapse:separate;
+    border:solid black 0.1vh;
+    border-spacing: none;
+    border-radius: 1vh;
+}
+
+#timestable td, th {
+    border-left: solid black 0.1vh;
+    border-top: solid black 0.1vh;
+    padding-left: 0.8vh;
+}
+
+#timestable th {
+    background-color: #add8e6;
+    border-top: none;
+}
+
+#timestable td:first-child, th:first-child {
+     border-left: none;
+}
