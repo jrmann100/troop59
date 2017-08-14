@@ -4,19 +4,21 @@
         <title>Communications Portfolio</title>
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/communications/intro.css') }}">
-    </head>
-    <body>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <h1 class="headtitle centered">Communications Merit Badge Portfolio</h1>
         <h3 class="reqtitle centered">by Jordan Mann</h3>
-        <br>
-        <br>
-        <br>
+    </head>
+
+    <br>
+    <br>
+    <br>
+
+    <body width="100%">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <h3 class="reqtitle">Requirement 1. (Do ONE of the following):</h3>
         <p class="reqbody"><strong>&nbsp;a. For one day, keep a log in which you describe your communication activities. Keep track of the time and different ways you spend communicating, such as talking person-to-person, listening to teachers or the radio, watching television, reading books and other print media, and using any electronic communication device. Discuss with your counselor what your log reveals about the importance of communication in your life. Think of ways to improve your communications skills.</strong></p>
         <br>
         <br>
-        <p class="reqbody" style="text-align: right;">4/26/2017</p>
+        <p class="reqbody" align="right">4/26/2017</p>
         <table id="timestable">
             <thead>
                 <tr>
@@ -46,7 +48,7 @@
         <p class="reqbody"><strong>a. Think of a creative way to describe yourself, using, for example, a collage, short story or autobiography, drawing or series of photographs, or a song or skit. Using the aid you created, make a presentation to your counselor about yourself.</strong></p>
         <br>
         <br>
-        <img class="fullimg" alt="I am an image. This is my alt text." src="{{ url_for('static', filename='selfie.jpg') }}"/>
+        <img class="fullimg" src="//s-media-cache-ak0.pinimg.com/originals/4e/9e/42/4e9e42d738fb0f2913547489e1a3f568.jpg"></img>
         <br>
         <br>
         <br>
@@ -77,6 +79,6 @@
             <li>Training in newswriting and research, photojournalism (radio broadcasting exempt), and radio/television programming and production are recommended.</li>
             <li>Internships are recommended; experience working on school/local newspapers or radio stations may be required.</li>
         </ol>
-        <footer class="reqbody centered">© 2017 <a href="//jrmann.com">Jordan Mann</a></footer>
     </body>
+    <footer class="reqbody centered">© 2017 <a href="//jrmann.com">Jordan Mann</a></footer>
 </html>

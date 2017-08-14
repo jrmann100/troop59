@@ -1,5 +1,6 @@
 html {
   font: 13px Verdana, Arial, sans-serif;
+  width: 100%;
 }
 
 body {
@@ -7,15 +8,21 @@ body {
 }
 
 .headtitle {
-    font-size: 4vh
+    font-size: 4vh;
+}
+
+.centered {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .reqbody {
-    font-size: 1.5vh
+    font-size: 1.5vh;
 }
 
 .reqtitle {
-    font-size: 1.75vh
+    font-size: 1.75vh;
 }
 
 #timestable {
@@ -41,4 +48,10 @@ body {
 
 #timestable td:first-child, th:first-child {
      border-left: none;
+}
+
+.fullimg {
+    display: block;
+    margin: auto;
+    width: 60vw;
 }
