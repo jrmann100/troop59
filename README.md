@@ -13,7 +13,7 @@ git clone https://github.com/jrmann100/troop59.git
 ```
 3. Create virtual enviroment (If you don't have pip, or Python at that, installed, you may be a lost cause.)
 ```
-pip install virtualenv
+sudo pip install virtualenv
 ```
 ```
 virtualenv env
