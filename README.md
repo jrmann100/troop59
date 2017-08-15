@@ -27,5 +27,5 @@ pip install -r Troop59/requirements.txt
 ```
 6. Run web application!
 ```
-python app.py
+python Troop59/app.py
 ```
