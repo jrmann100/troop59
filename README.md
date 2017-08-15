@@ -27,9 +27,9 @@ source env/bin/activate
 ```
 5. Install Python dependencies
 ```
-pip install -r Troop59/requirements.txt
+pip install -r troop59/requirements.txt
 ```
 6. Run web application!
 ```
-python Troop59/app.py
+python troop59/app.py
 ```
