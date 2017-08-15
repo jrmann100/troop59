@@ -2,7 +2,7 @@
 A Flask web server/site for BSA Marin Council Troop 59.
 
 ## Installation ##
-Note: I've created an sh file with all the commands below listed, so you can just copy-paste the whole thing (DON'T: clone the repository and then run the script, as it does that for you), but I'd recommend just going step-by-step.
+Note: I've created an sh file with all the commands below listed, so you can just copy-paste the whole thing __(DON'T: clone the repository and then run the script, as it does that for you)__, but I'd recommend just going step-by-step.
 1. Create and enter project folder
 ```
 mkdir T59
