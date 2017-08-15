@@ -34,4 +34,4 @@ pip install -r troop59/requirements.txt
 python troop59/app.py
 ```
 
-You can even do this in a [Cloud9 Workspace](http://c9.io "Cloud9"), changing the last line of `app.py` from `port=9001` to `port=8080` and following the instructions at https://docs.c9.io/docs/run-an-application, and try out the project from there like [in this example.](https://install-instruction-testing-jrmann100.c9users.io/ "My Example Workspace")
+You can even do this in a [Cloud9 Workspace](http://c9.io "Cloud9"), changing the last line of `app.py` from `port=9001` to `port=8080` and following the instructions at https://docs.c9.io/docs/run-an-application, and try out the project from there like [in this example.](https://ide.c9.io/jrmann100/install-instruction-testing/ "My Example Workspace")
